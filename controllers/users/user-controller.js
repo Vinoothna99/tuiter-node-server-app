@@ -31,7 +31,6 @@ const findUserById = (req, res) => {
 
 const createUser = (req, res) => {
     const newUser = req.body;
-    console.log("Lol: ",req.body);
     newUser.id = (new Date()).getTime() + '';
     users.push(newUser);
     res.json(newUser);
